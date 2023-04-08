@@ -16,7 +16,7 @@ public class VendingMachine {
         //declares the VendingLog in order to call on the methods for logging data
         VendingLog logger = new VendingLog();
         //initializes a map of inventory with String keys and Purchasable values
-        Map<String, Purchasable> inventory = new HashMap<>();
+        Map<String, Purchasable> inventory = new TreeMap<>();
 
         //while true, loop will continue to run until a break is called
         while (true) {

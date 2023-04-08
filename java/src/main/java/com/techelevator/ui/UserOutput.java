@@ -34,7 +34,7 @@ public class UserOutput {
         System.out.println("                      Home");
         System.out.println("***************************************************");
         System.out.println();
-        System.out.println("Thanksgiving Sale! Every 2nd item purchased is $1 off!");
+        System.out.println("Customer Appreciation Sale! Every 2nd item purchased is $1 off!");
         System.out.println();
     }
 
@@ -93,8 +93,23 @@ public class UserOutput {
     }
     //displays the change given
     public static String changeGivenDisplay(int dollars, int quarters, int dimes, int nickels, BigDecimal amountSaved){
-        return "Your change is: " + dollars + " dollars, " + quarters + " quarters, " + dimes + " dimes, and " +
-                nickels + " nickels. You saved: " + NumberFormat.getCurrencyInstance().format(amountSaved);
+        String singleDollar = " dollar, ";
+        String singleQuarter = " quarter, ";
+        String singleDime = " dime, ";
+        String singleNickel = " nickel. ";
+        String multipleDollars = " dollars, ";
+        String multipleQuarters = " quarters, ";
+        String multipleDimes = " dimes, ";
+        String multipleNickels = " nickels. ";
+
+        String dollarChangeText = (dollars == 1) ? singleDollar : multipleDollars;
+        String quarterChangeText = (quarters == 1) ? singleQuarter : multipleQuarters;
+        String dimeChangeText = (dimes == 1) ? singleDime : multipleDimes;
+        String nickelChangeText = (nickels == 1) ? singleNickel : multipleNickels;
+
+
+        return "Your change is: " + dollars + dollarChangeText + quarters + quarterChangeText + dimes + dimeChangeText +
+                nickels + nickelChangeText + "You saved: " + NumberFormat.getCurrencyInstance().format(amountSaved);
 
     }
 
