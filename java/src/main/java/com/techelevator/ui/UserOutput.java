@@ -109,7 +109,7 @@ public class UserOutput {
 
 
         return "Your change is: " + dollars + dollarChangeText + quarters + quarterChangeText + dimes + dimeChangeText +
-                nickels + nickelChangeText + "You saved: " + NumberFormat.getCurrencyInstance().format(amountSaved);
+                "and " + nickels + nickelChangeText + "You saved: " + NumberFormat.getCurrencyInstance().format(amountSaved);
 
     }
 

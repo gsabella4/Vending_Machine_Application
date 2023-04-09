@@ -67,7 +67,7 @@ public class CustomerTest {
         customer.addItem(drink);
         customer.addItem(candy);
 
-        String expectedWithDiscount = "Your change is: 15 dollars, 1 quarters, 0 dimes, and 1 nickels. You saved: $1.00";
+        String expectedWithDiscount = "Your change is: 15 dollars, 1 quarter, 0 dimes, and 1 nickel. You saved: $1.00";
         Assert.assertEquals(expectedWithDiscount, customer.getChangeString());
     }
     @Test
@@ -90,7 +90,7 @@ public class CustomerTest {
         customer.addItem(candy);
         customer.addItem(candy);
 
-        String expectedWithDiscount = "Your change is: 25 dollars, 3 quarters, 1 dimes, and 1 nickels. You saved: $3.00";
+        String expectedWithDiscount = "Your change is: 25 dollars, 3 quarters, 1 dime, and 1 nickel. You saved: $3.00";
         Assert.assertEquals(expectedWithDiscount, customer.getChangeString());
     }
     @Test
@@ -99,7 +99,7 @@ public class CustomerTest {
         customer.addItem(drink);
         customer.addItem(munchy);
 
-        String expectedWithDiscount = "Your change is: 34 dollars, 2 quarters, 1 dimes, and 0 nickels. You saved: $1.00";
+        String expectedWithDiscount = "Your change is: 34 dollars, 2 quarters, 1 dime, and 0 nickels. You saved: $1.00";
         Assert.assertEquals(expectedWithDiscount, customer.getChangeString());
     }
     @Test
@@ -108,7 +108,7 @@ public class CustomerTest {
         customer.addItem(munchy);
         customer.addItem(candy);
 
-        String expectedWithDiscount = "Your change is: 35 dollars, 3 quarters, 0 dimes, and 1 nickels. You saved: $1.00";
+        String expectedWithDiscount = "Your change is: 35 dollars, 3 quarters, 0 dimes, and 1 nickel. You saved: $1.00";
         Assert.assertEquals(expectedWithDiscount, customer.getChangeString());
     }
     @Test
@@ -135,7 +135,7 @@ public class CustomerTest {
         customer.addItem(gum);
         customer.addItem(candy);
 
-        String expectedWithDiscount = "Your change is: 6 dollars, 1 quarters, 1 dimes, and 1 nickels. You saved: $1.00";
+        String expectedWithDiscount = "Your change is: 6 dollars, 1 quarter, 1 dime, and 1 nickel. You saved: $1.00";
         Assert.assertEquals(expectedWithDiscount, customer.getChangeString());
     }
     @Test
